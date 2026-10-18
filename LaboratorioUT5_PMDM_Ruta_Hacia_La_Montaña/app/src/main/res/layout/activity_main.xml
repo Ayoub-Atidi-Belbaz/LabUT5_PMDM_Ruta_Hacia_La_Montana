@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F2937"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar superior: garantiza la visualización del menú de opciones en temas NoActionBar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#111827"
+        app:title="Ruta a Mordor"
+        app:titleTextColor="#F9FAFB" />
+
+    <!-- Listado principal de etapas -->
+    <ListView
+        android:id="@+id/lvEtapas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#374151"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
